@@ -1,0 +1,39 @@
+.container {
+    max-width: 80%;
+    background-color: yellow;
+    margin-inline: auto;
+    margin-block: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.employee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.employee p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btns button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+

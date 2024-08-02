@@ -1,0 +1,30 @@
+.heading {
+    width: 100%;
+    background-color: red;
+    padding: 10px;
+    text-align:center;
+    color: white;
+    font-weight: 500;
+}
+
+
+.btnContainer {
+    width: 100%;
+}
+
+.addNewEmp {
+    display: block;
+    margin-block: 30px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    margin-inline: auto;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.addNewEmp:hover {
+    background-color: rgb(14, 206, 14);
+}
