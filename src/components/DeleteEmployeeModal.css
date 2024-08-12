@@ -1,0 +1,56 @@
+.delete-container {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 400px;
+    height: 200px;
+    background-color: orange;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.content h3 {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+.deleteBtnContainer {
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.yes-btn {
+    padding: 10px;
+    background-color: green !important;
+    color: white !important;
+    border-radius: 5px;
+    width: 80px;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.no-btn {
+    padding: 10px;
+    background-color: red !important;
+    color: white !important;
+    border-radius: 5px;
+    width: 80px;
+    height: auto;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}

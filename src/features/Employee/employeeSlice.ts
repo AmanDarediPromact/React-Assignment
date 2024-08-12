@@ -9,7 +9,10 @@ type Employee = {
     experience: number
 }
 
-const initialState : Employee[] = []
+const empList = localStorage.getItem('empList')
+const employeeList = empList ? JSON.parse(empList) : null
+
+const initialState : Employee[] = employeeList ? employeeList : []
 // console.log(initialState)
 const employeeSlice = createSlice({
     name: "employee",
@@ -22,6 +25,7 @@ const employeeSlice = createSlice({
                 ...action.payload, id: nanoid()
             }
             state.push(emp)
+            localStorage.setItem('empList', JSON.stringify(state))
         },
         
         editEmployee : (state, action : PayloadAction<Employee>) => {
@@ -33,10 +37,12 @@ const employeeSlice = createSlice({
                 state[index].department = action.payload.department
                 state[index].experience = action.payload.experience
             }
+            localStorage.setItem('empList', JSON.stringify(state))
         },
 
         deleteEmployee : (state, action : PayloadAction<string>) => {
             state = state.filter(emp => emp.id !== action.payload)
+            localStorage.setItem('empList', JSON.stringify(state))
             return state
         }
     }
